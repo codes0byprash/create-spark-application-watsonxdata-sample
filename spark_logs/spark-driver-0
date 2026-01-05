@@ -1,0 +1,36 @@
+25/12/31 04:41:31 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+25/12/31 04:41:31 WARN MetricsConfig: Cannot locate configuration: tried hadoop-metrics2-s3a-file-system.properties,hadoop-metrics2.properties
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+25/12/31 04:41:31 WARN ConfigurationHelper: Option fs.s3a.connection.establish.timeout is too low (5,000 ms). Setting to 15,000 ms instead
+25/12/31 04:41:36 WARN SparkConf: Note that spark.local.dir will be overridden by the value set by the cluster manager (via SPARK_LOCAL_DIRS in mesos/standalone/kubernetes and LOCAL_DIRS in YARN).
+25/12/31 04:41:40 WARN COSAPIClient: file status spark/spark644/spark-events returned 404
+25/12/31 04:41:40 WARN COSAPIClient: file status spark/spark644/spark-events/eventlog_v2_app-20251231044138-0000 returned 404
+25/12/31 04:41:40 WARN COSAPIClient: file status spark/spark644/spark-events/eventlog_v2_app-20251231044138-0000 returned 404
+Running transformation logic...
+Transformation Preview:
+25/12/31 04:41:50 WARN SizeEstimator: Failed to check whether UseCompressedOops is set; assuming yes
+
+[Stage 0:>                                                          (0 + 0) / 1]
+
+[Stage 0:>                                                          (0 + 1) / 1]
+
+                                                                                
++---+-----+------+
+| id| name|status|
++---+-----+------+
+|  1|Alice|Active|
++---+-----+------+
+
+25/12/31 04:41:55 WARN GarbageCollectionMetrics: To enable non-built-in garbage collector(s) List(scavenge), users should configure it(them) to spark.eventLog.gcMetrics.youngGenerationGarbageCollectors or spark.eventLog.gcMetrics.oldGenerationGarbageCollectors
+25/12/31 04:41:55 WARN GarbageCollectionMetrics: To enable non-built-in garbage collector(s) List(global, scavenge), users should configure it(them) to spark.eventLog.gcMetrics.youngGenerationGarbageCollectors or spark.eventLog.gcMetrics.oldGenerationGarbageCollectors
+
+[Stage 2:>                                                          (0 + 1) / 2]
+
+[Stage 2:=============================>                             (1 + 1) / 2]
+
+                                                                                
+Active records count: 1
+25/12/31 04:41:57 WARN COSAPIClient: file status spark/spark644/spark-events/eventlog_v2_app-20251231044138-0000/appstatus_app-20251231044138-0000 returned 404
+25/12/31 04:41:57 WARN COSAPIClient: file status spark/spark644/spark-events/eventlog_v2_app-20251231044138-0000/appstatus_app-20251231044138-0000 returned 404
